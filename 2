@@ -1,0 +1,22 @@
+public enum Weekday {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+
+    // Metoda pentru a verifica dacă este zi de lucru
+    public boolean isWeekday() {
+        return this != SATURDAY && this != SUNDAY;
+    }
+
+    // Metoda pentru a verifica dacă este zi de weekend
+    public boolean isHoliday() {
+        return this == SATURDAY || this == SUNDAY;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Testarea metodelor isWeekday() și isHoliday()
+        System.out.println(Weekday.MONDAY.isWeekday()); // true
+        System.out.println(Weekday.SATURDAY.isHoliday()); // true
+        System.out.println(Weekday.SUNDAY.isWeekday()); // false
+    }
+}
