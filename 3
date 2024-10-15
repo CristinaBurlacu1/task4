@@ -1,0 +1,38 @@
+public class StringToPrimitiveConversion {
+    public static void main(String[] args) {
+        // Conversia String -> boolean
+        String booleanString = "tRue";
+        boolean booleanValue = Boolean.parseBoolean(booleanString);
+        System.out.println(booleanValue);  // true
+
+        // Conversia String -> byte
+        String byteString = "120";
+        byte byteValue = Byte.parseByte(byteString);
+        System.out.println(byteValue);  // 120
+
+        // Conversia String -> short
+        String shortString = "32000";
+        short shortValue = Short.parseShort(shortString);
+        System.out.println(shortValue);  // 32000
+
+        // Conversia String -> int
+        String intString = "147895632";
+        int intValue = Integer.parseInt(intString);
+        System.out.println(intValue);  // 147895632
+
+        // Conversia String -> long
+        String longString = "987654321987654321";
+        long longValue = Long.parseLong(longString);
+        System.out.println(longValue);  // 987654321987654321
+
+        // Conversia String -> double
+        String doubleString = "4444.5d";
+        double doubleValue = Double.parseDouble(doubleString);
+        System.out.println(doubleValue);  // 4444.5
+
+        // Conversia String -> float
+        String floatString = "2354.56f";
+        float floatValue = Float.parseFloat(floatString);
+        System.out.println(floatValue);  // 2354.56
+    }
+}
